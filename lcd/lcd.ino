@@ -57,6 +57,8 @@ void setup()   /*----( SETUP: RUNS ONCE )----*/
 void loop()   /*----( LOOP: RUNS CONSTANTLY )----*/
 {
   {
+    lcd.setCursor(0,1); //Start at character 4 on line 0
+    lcd.print("Type to display");
     // when characters arrive over the serial port...
     if (Serial.available()) {
       // wait a bit for the entire message to arrive
